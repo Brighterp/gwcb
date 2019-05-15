@@ -1,0 +1,41 @@
+[05/03/06 08:34:54 Pacific Standard Time]::Client Status [ConnId=0, PID=3636]
+	>> ERROR: Abnormal termination, Error Code: C0000005 ACCESS_VIOLATION
+
+======================= STACK DUMP =======================
+
+Fault address:  6723F959 01:0007E959
+Module: D:\orant6i\BIN\UIW60.dll
+
+System Information:
+Operating System: Windows NT Version 5.1 Build 2600 Service Pack 2
+Command line: "D:\orant6i\BIN\ifrun60.EXE" D:\sameh\logon.fmx FIS/FIS@ORCL
+FORM/BLOCK/FIELD: SAL_F_026:CONTROL.FROM_CUSTOMER_CODE
+Last Trigger: POST-TEXT-ITEM - (Successfully Completed)
+Msg: <NULL>
+Last Builtin: EXIT_FORM - (Successfully Completed)
+
+Registers:
+EAX:0272EDE0
+EBX:00000001
+ECX:00000001
+EDX:7C90EB94
+ESI:001DD0F8
+EDI:001492F0
+CS:EIP:001B:6723F959
+SS:ESP:0023:0012F304  EBP:0012F33C
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010246
+------------------- Call Stack Trace ---------------------
+Frameptr   RetAddr  Param#1  Param#2  Param#3  Param#4  Function Name       
+0x0012f33c 00473f55 01046868 00020b3e 00000000 0102d8e0 0x6723f959          
+0x0012f360 004147d2 0102d8e0 017d9080 00000000 0102d8e0 0x00473f55          
+0x0012f38c 0041a41c 00000000 00000001 01024a34 0102d8e0 0x004147d2          
+0x0012f3ec 00419dd6 017d613c 01024a34 01140040 00000001 0x0041a41c          
+0x0012f508 00412ee1 00000000 01031af8 00000012 01031868 0x00419dd6          
+0x0012fd68 004119e9 00000014 00000000 00000003 01270a30 0x00412ee1          
+0x0012fd8c 004118be 00ea2090 00000000 00000000 00000003 0x004119e9          
+0x0012fdac 67948973 00ea2090 00000000 00000000 00000003 0x004118be          
+0x0012fdfc 6794a3b1 00ea3544 00403010 00000000 00000003 0x67948973          
+------------------- End of Stack Trace -------------------
+
+

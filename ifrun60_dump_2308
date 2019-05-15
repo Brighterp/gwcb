@@ -1,0 +1,40 @@
+[11/21/18 11:47:14 Arab Standard Time]::Client Status [ConnId=0, PID=2308]
+	>> ERROR: Abnormal termination, Error Code: C0000006 IN_PAGE_ERROR
+
+======================= STACK DUMP =======================
+
+Fault address:  00B1145A 01:0001045A
+Module: D:\orant\BIN\ifrcm60.dll
+
+System Information:
+Operating System: Windows NT Version 6.2 Build 9200 
+Command line: "D:\orant\BIN\ifrun60.EXE" \\192.168.66.10\bright\LOGON.fmx GWCB/GWCB@ORCL
+FORM/BLOCK/FIELD: SAL_F_029:SAL_INVOICES.PRINT
+Last Trigger: ON-ERROR - (In Progress)
+Msg: ORA-12571
+Last Builtin: FIND_GROUP - (In Progress)
+
+Registers:
+EAX:0C2C5D78
+EBX:0000000B
+ECX:0000000B
+EDX:00000000
+ESI:0019B548
+EDI:0C261F94
+CS:EIP:0023:00B1145A
+SS:ESP:002B:0019B53C  EBP:0019B568
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+------------------- Call Stack Trace ---------------------
+Frameptr   RetAddr  Param#1  Param#2  Param#3  Param#4  Function Name       
+0x0019b568 00a69062 025b2e18 025be640 0000000b 0c2c4b50 0x00b1145a          
+0x0019b588 00a7c275 025be58c 025be640 0000000b 0019c2bc 0x00a69062          
+0x0019c3ec 00a72306 07a3a86c 00000002 077ee454 0000006a 0x00a7c275          
+0x0019c404 664b049b 07a3a86c 00000002 077ee454 025cadc4 0x00a72306          
+0x0019d504 6646452a 07a3a86c 025cadc4 07a7b954 00000001 0x664b049b          
+0x0019d56c 67e28edc 025cadc4 07a3a86c 025e57b0 025be58c 0x6646452a          
+0x025c98c0 025be58c 67deac90 67deacd0 00a17990 00000000 0x67e28edc          
+0x025e57b0 00000001 0000000a 025e37f8 67fbcf2f 009c189a 0x025be58c          
+------------------- End of Stack Trace -------------------
+
+

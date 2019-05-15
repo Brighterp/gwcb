@@ -1,0 +1,6 @@
+begin
+apex_mail_p.mail('sameh@erpbright.com', 'sameh@erpbright.com', 'Subject', 'test');
+end;
+/
+
+

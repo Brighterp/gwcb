@@ -1,0 +1,33 @@
+[10/18/18 12:00:12 Arab Standard Time]::Client Status [ConnId=0, PID=7332]
+	>> ERROR: Abnormal termination, Error Code: C0000005 ACCESS_VIOLATION
+
+======================= STACK DUMP =======================
+
+Fault address:  67E156D9 01:000646D9
+Module: D:\ORACLE\DEV6I\BIN\DEB60.dll
+
+System Information:
+Operating System: Windows NT Version 6.2 Build 9200 
+Command line: "D:\ORACLE\DEV6I\BIN\ifrun60.EXE" D:\BRIGHT\LOGON.fmx GWCB/GWCB@ORCL
+FORM/BLOCK/FIELD: CSH_F_000:BLOCK2.PUSH_BUTTON3
+Last Trigger: WHEN-WINDOW-ACTIVATED - (Successfully Completed)
+Msg: <NULL>
+Last Builtin: GET_FORM_PROPERTY - (Successfully Completed)
+
+Registers:
+EAX:00000000
+EBX:02EDC738
+ECX:00000000
+EDX:80014008
+ESI:06107424
+EDI:FFFFFFFF
+CS:EIP:0023:67E156D9
+SS:ESP:002B:0019DF84  EBP:0019E338
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010206
+------------------- Call Stack Trace ---------------------
+Frameptr   RetAddr  Param#1  Param#2  Param#3  Param#4  Function Name       
+0x0019e338 00802600 67e7b1a0 67e7b1c0 0019e368 fffffffe 0x67e156d9          
+------------------- End of Stack Trace -------------------
+
+

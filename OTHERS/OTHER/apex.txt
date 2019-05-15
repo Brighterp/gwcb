@@ -1,0 +1,38 @@
+E:\app\Administrator\product\11.2.0\dbhome_1\BIN\sqlplus.exe SYS/DBA@ORCL AS SYSDBA
+
+
+E:\app\Administrator\product\11.2.0\dbhome_1\BIN\sqlplus.exe SYS/DBA@ORCLAR AS SYSDBA
+
+
+@apexins sysaux sysaux temp /i/
+
+
+@apxldimg.sql C:\TEMP
+
+@apex_epg_config C:\TEMP
+
+
+@apxconf
+
+alter user anonymous account unlock;
+
+exec dbms_xdb.sethttpport(8080);
+
+http://197.44.147.34:8080/apex
+----------------------
+
+@apxremov
+
+exec dbms_epg.set_dad_attribute('APEX', 'error-style', 'DebugStyle');
+
+ALTER SYSTEM FLUSH SHARED_POOL;
+
+ALTER SESSION SET CURRENT_SCHEMA = APEX_040200;
+
+exec APEX_040200.wwv_flow_upgrade.switch_schemas ('APEX_050000','APEX_040200');
+
+
+
+SELECT username, account_status FROM dba_users WHERE username in('APEX_PUBLIC_USER', 'FLOWS_FILES') or username like 'APEX_%' or username like 'FLOWS_%';
+
+

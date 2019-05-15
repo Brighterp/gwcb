@@ -1,0 +1,41 @@
+[10/14/18 16:51:54 Arab Standard Time]::Client Status [ConnId=0, PID=11268]
+	>> ERROR: Abnormal termination, Error Code: C0000005 ACCESS_VIOLATION
+
+======================= STACK DUMP =======================
+
+Fault address:  6723F959 01:0007E959
+Module: D:\orant\BIN\UIW60.dll
+
+System Information:
+Operating System: Windows NT Version 6.2 Build 9200 
+Command line: "D:\orant\BIN\ifrun60.EXE" \\192.168.66.10\bright\LOGON.fmx GWCB/GWCB@ORCL
+FORM/BLOCK/FIELD: SET_F_000_SAMEH:BLOCK2.PUSH_BUTTON3
+Last Trigger: WHEN-WINDOW-CLOSED - (Execution Suspended)
+Msg: <NULL>
+Last Builtin: EXIT_FORM - (Successfully Completed)
+
+Registers:
+EAX:0D2DC192
+EBX:00000001
+ECX:00000001
+EDX:00000000
+ESI:0641A740
+EDI:0066ACD0
+CS:EIP:0023:6723F959
+SS:ESP:002B:0019F2C4  EBP:0019F2FC
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010246
+------------------- Call Stack Trace ---------------------
+Frameptr   RetAddr  Param#1  Param#2  Param#3  Param#4  Function Name       
+0x0019f2fc 009e3f55 00cf8090 0003031e 00000000 029bdf78 0x6723f959          
+0x0019f320 009847d2 029bdf78 07e20e60 00000000 029bdf78 0x009e3f55          
+0x0019f34c 0098a41c 00000000 00000001 029b514c 029bdf78 0x009847d2          
+0x0019f3ac 00989dd6 07e1dc8c 029b514c 00000000 00000001 0x0098a41c          
+0x0019f4c8 00982ee1 00000000 029b510c 00000020 029c1ee0 0x00989dd6          
+0x0019fd28 009819e9 00000014 00000000 00000003 02b00ca0 0x00982ee1          
+0x0019fd4c 009818be 02af07a8 00000000 00000000 00000003 0x009819e9          
+0x0019fd6c 100088f2 02af07a8 00000000 00000000 00000003 0x009818be          
+0x0019fdbc 1000a26f 02af19c4 00403010 00000000 00000003 0x100088f2          
+------------------- End of Stack Trace -------------------
+
+

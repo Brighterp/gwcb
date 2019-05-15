@@ -1,0 +1,10 @@
+
+
+If wequ_no = 20000 Then
+
+NULL;
+End If;
+
+
+/
+exit/

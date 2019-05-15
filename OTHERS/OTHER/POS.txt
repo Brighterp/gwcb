@@ -1,0 +1,12 @@
+Type “MODE COM6 96,N,8,1” and press the ENTER key.
+
+Type “TYPE CON>COM1” and press the ENTER key.
+PD3000, PD3300, PD3400, PD3500, PD3900, PD6000, PD6300,
+PD6400, PD6500 and PD6900
+
+
+1. Type “ABCDEFGH” and press ENTER key. The display will show
+“ABCDEFGH” on the first line.
+
+2. To end the test press Ctrl-C (hold down Ctrl and press C).
+PD3200 and
